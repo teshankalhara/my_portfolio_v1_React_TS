@@ -1,4 +1,4 @@
-import imgPro from '../../assets/img/imgPro.jpg'
+import imgPro from '../../assets/img/picPro.jpg'
 
 const Hero = () => {
     return (
