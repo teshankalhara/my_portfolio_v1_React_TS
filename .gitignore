@@ -1,5 +1,7 @@
 .vscode
 
+./src/assets/img
+
 # Logs
 logs
 *.log
