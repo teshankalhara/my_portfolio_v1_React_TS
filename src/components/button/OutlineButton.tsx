@@ -1,4 +1,4 @@
-import BtnType from "../../types/BtnType/BtnType"
+import BtnType from "../../types/btnType/BtnType"
 
 const OutlineButton = (btn: BtnType) => {
     if (btn.href) {
