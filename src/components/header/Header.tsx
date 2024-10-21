@@ -1,3 +1,4 @@
+import imgPro from '../../assets/img/imgPro.jpg'
 import Navbar from "../navbar/Navbar"
 import { useState } from "react"
 
@@ -14,7 +15,7 @@ const Header = () => {
                     {/*IMG*/}
                     {/*</Link>*/}
                     <a href="/" className="logo">
-                        <img src="" width={40} height={40} alt="teshan_kalhara" />
+                        <img src={imgPro} width={40} height={40} alt="teshan_kalhara" />
                     </a>
                 </h1>
 
