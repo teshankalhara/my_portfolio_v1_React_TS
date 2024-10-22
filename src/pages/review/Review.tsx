@@ -13,7 +13,7 @@ const reviews = [
     name: 'Tesh Kal 1',
     imgSrc: imgPro,
     company: 'WWE'
-  },{
+  }, {
     content: 'Web development! Delivered a seamless, responsive site with clean code and great UX.',
     name: 'Tesh Kal',
     imgSrc: imgPro,
@@ -24,7 +24,7 @@ const reviews = [
     name: 'Tesh Kal 1',
     imgSrc: imgPro,
     company: 'WWE'
-  },{
+  }, {
     content: 'Web development! Delivered a seamless, responsive site with clean code and great UX.',
     name: 'Tesh Kal',
     imgSrc: imgPro,
@@ -35,7 +35,7 @@ const reviews = [
     name: 'Tesh Kal 1',
     imgSrc: imgPro,
     company: 'WWE'
-  },{
+  }, {
     content: 'Web development! Delivered a seamless, responsive site with clean code and great UX.',
     name: 'Tesh Kal',
     imgSrc: imgPro,
