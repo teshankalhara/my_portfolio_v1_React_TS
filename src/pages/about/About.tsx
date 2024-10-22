@@ -23,7 +23,7 @@ const About = () => {
                         {aboutItems.map((item, key) => {
                             return (
                                 <div key={key}>
-                                    <div className="flex items-center md:mb-2">
+                                    <div className="flex items-center justify-center md:mb-2">
                                         <span className="text-2xl font-bold md:text-4xl">
                                             {item.count}
                                         </span>
