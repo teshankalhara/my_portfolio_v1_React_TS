@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './components/header/Header'
 import About from './pages/about/About'
+import Contact from './pages/contact/Contact'
 import Home from './pages/home/Home'
 import Review from './pages/review/Review'
 import Skill from './pages/skill/Skill'
@@ -17,6 +18,7 @@ function App() {
         <Skill/>
         <Work/>
         <Review/>
+        <Contact/>
       </main>
     </>
   )
