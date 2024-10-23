@@ -44,14 +44,14 @@ const Work = () => {
     return (
         <div id="work" className="section">
             <div className="container">
-                <h2 className="headline-2 mb-8">
+                <h2 className="headline-2 mb-8 reveal-up">
                     My portfolio highlight
                 </h2>
                 <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,_1fr))]">
                     {
                         works.map((item, key) => {
                             return (
-                                <ProjectCard key={key} imgSrc={imgPro} title={item.title} tags={item.tags} projectLink={item.projectLink} />
+                                <ProjectCard key={key} imgSrc={imgPro} title={item.title} tags={item.tags} projectLink={item.projectLink} classes="reveal-up"/>
                             )
                         })
                     }

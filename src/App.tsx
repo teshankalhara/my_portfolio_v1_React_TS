@@ -8,21 +8,43 @@ import Review from './pages/review/Review'
 import Skill from './pages/skill/Skill'
 import Work from './pages/work/Work'
 
-function App() {
+import { ReactLenis } from 'lenis/react'
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useGSAP } from '@gsap/react'
 
+gsap.registerPlugin(useGSAP, ScrollTrigger)
+
+function App() {
+  useGSAP(() => {
+    const elements = gsap.utils.toArray<HTMLElement>('.reveal-up')
+    elements.forEach((element) => {
+      gsap.to(element, {
+        scrollTrigger: {
+          trigger: element,
+          start: '0 bottom',
+          end: 'bottom 80%',
+        },
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: 'power2.out'
+      })
+    })
+  })
   return (
-    <>
-      <Header/>
+    <ReactLenis root>
+      <Header />
       <main>
-        <Home/>
-        <About/>
-        <Skill/>
-        <Work/>
-        <Review/>
-        <Contact/>
+        <Home />
+        <About />
+        <Skill />
+        <Work />
+        <Review />
+        <Contact />
       </main>
-      <Footer/>
-    </>
+      <Footer />
+    </ReactLenis>
   )
 }
 
