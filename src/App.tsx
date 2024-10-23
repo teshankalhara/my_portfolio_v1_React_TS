@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
@@ -20,6 +21,7 @@ function App() {
         <Review/>
         <Contact/>
       </main>
+      <Footer/>
     </>
   )
 }
