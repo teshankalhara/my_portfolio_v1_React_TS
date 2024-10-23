@@ -1,3 +1,5 @@
+import { useRef } from "react"
+
 const socialLinks = [
     {
         href: 'https://www.github.com/teshankalhara',
@@ -30,6 +32,38 @@ const socialLinks = [
 ]
 
 const Contact = () => {
+    const formRef = useRef<HTMLFormElement | null>(null);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        const formData = new FormData(formRef.current!)
+        const data = Object.fromEntries(formData.entries())
+
+        try {
+            const response = await fetch('https://getform.io/f/bjjjerjb', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            if (formRef.current) {
+                formRef.current.reset();
+            }
+
+            alert('Message sent successfully!');
+        } catch (error) {
+            console.error('Error sending message:', error);
+            alert('Failed to send message. Please try again later.');
+        }
+    }
+    
     return (
         <div id="contact" className="section pb-4">
             <div className="container lg:grid lg:grid-cols-2 lg:items-stretch">
@@ -50,7 +84,8 @@ const Contact = () => {
                         })}
                     </div>
                 </div>
-                <form action="" method="POST" className="xl:pl-10 2xl:pl-20">
+                <form ref={formRef} 
+                    onSubmit={handleSubmit}  className="xl:pl-10 2xl:pl-20">
                     <div className="md:grid md:items-center md:grid-rows-2 md:gap-2">
                         <div className="mb-4">
                             <label htmlFor="name" className="label">
