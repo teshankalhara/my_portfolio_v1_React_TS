@@ -15,7 +15,7 @@ const Header = () => {
                     {/*IMG*/}
                     {/*</Link>*/}
                     <a href="/" className="logo">
-                        <img src={imgPro} width={40} height={40} alt="teshan_kalhara" />
+                        <img src={imgPro} width={40} height={40} alt="teshan_kalhara" className='rounded-lg'/>
                     </a>
                 </h1>
 
