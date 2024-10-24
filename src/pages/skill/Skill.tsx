@@ -2,6 +2,21 @@ import SkillCard from "../../components/skillCard/SkillCard"
 
 const skillItem = [
     {
+        imgSrc: '/images/typescript.svg',
+        label: 'TypeScript',
+        desc: 'Interaction'
+    },
+    {
+        imgSrc: '/images/java.svg',
+        label: 'Java',
+        desc: 'Programming'
+    },
+    {
+        imgSrc: '/images/javascript.svg',
+        label: 'JavaScript',
+        desc: 'Interaction'
+    },
+    {
         imgSrc: '/images/figma.svg',
         label: 'Figma',
         desc: 'Design tool'
@@ -10,11 +25,6 @@ const skillItem = [
         imgSrc: '/images/css3.svg',
         label: 'CSS',
         desc: 'User Interface'
-    },
-    {
-        imgSrc: '/images/javascript.svg',
-        label: 'JavaScript',
-        desc: 'Interaction'
     },
     {
         imgSrc: '/images/nodejs.svg',
@@ -32,6 +42,11 @@ const skillItem = [
         desc: 'Database'
     },
     {
+        imgSrc: '/images/mysql.svg',
+        label: 'MySql',
+        desc: 'Database'
+    },
+    {
         imgSrc: '/images/react.svg',
         label: 'React',
         desc: 'Framework'
@@ -39,6 +54,11 @@ const skillItem = [
     {
         imgSrc: '/images/tailwindcss.svg',
         label: 'TailwindCSS',
+        desc: 'User Interface'
+    },
+    {
+        imgSrc: '/images/bootsrap.svg',
+        label: 'BootsrapCSS',
         desc: 'User Interface'
     },
 ]

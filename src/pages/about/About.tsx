@@ -27,7 +27,7 @@ const About = () => {
                                         <span className="text-2xl font-bold md:text-4xl">
                                             {item.count}
                                         </span>
-                                        <span className="text-sky-400 font-semibold md:text-3xl">
+                                        <span className="text-sky-400 font-semibold md:text-4xl ml-1">
                                             +
                                         </span>
                                     </div>
@@ -37,7 +37,7 @@ const About = () => {
                                 </div>
                             )
                         })}
-                        <img src={imgPro} alt='logo' width={30} height={30} className='ml-auto md:w-[40px] md:h-[40px]' />
+                        <img src={imgPro} alt='logo' width={30} height={30} className='ml-auto md:w-[40px] md:h-[40px] rounded-lg' />
                     </div>
                 </div>
             </div>
