@@ -70,7 +70,7 @@ const Review = () => {
         <h2 className="headline-2 mb-8 capitalize reveal-up">
           our customers say
         </h2>
-        <div className="reveal-up scrub-slide flex items-stretch gap-3 w-fit">
+        <div className="scrub-slide flex items-stretch gap-3 w-fit">
           {reviews && reviews.map((item, key) => {
             return (
               <ReviewCard name={item.name} content={item.content} imgSrc={item.imgSrc} company={item.company} key={key} />
